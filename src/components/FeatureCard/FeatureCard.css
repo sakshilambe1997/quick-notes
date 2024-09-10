@@ -1,0 +1,27 @@
+.feature-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top:50px;
+    margin-bottom: 50px;
+}
+
+.feature-card{
+    background-color: white;
+    width: 200px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #BED1CF;
+    cursor: pointer;
+
+}
+
+.feature-img{
+    height: 50px;
+    display: block;
+    margin: 20px auto;
+}
+
+.feature-text{
+    font-size: 14px;
+}
+
