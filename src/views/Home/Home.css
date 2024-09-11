@@ -3,3 +3,20 @@
     justify-content: center;
 }
 
+@media screen and (max-width:500px){
+    .app-title{
+        font-size: 20px;
+    }
+
+    .tagline-highlight{
+        display: block;
+    }
+
+    .buttons-container{
+        background-color: #fff;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        position: fixed;
+    }
+}

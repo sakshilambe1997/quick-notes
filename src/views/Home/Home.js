@@ -4,6 +4,7 @@ import ImgSecure from "./secure.png"
 import ImgHeart from "./heart.png"
 import ImgBrain from "./human-brain.png"
 import FeatureCard from '../../components/FeatureCard/FeatureCard'
+import { Link } from 'react-router-dom'
 
 const Features=[
   {
@@ -24,9 +25,9 @@ const Features=[
 function Home() {
   return (
    <>
-   <h1 className='text-center text-primary'>📘 Quick Note</h1>
+   <h1 className='text-center text-primary app-title' >📘 Quick Note</h1>
    <p className='text-center'>Your Pocket friendly app. <del>Never Forget anything again!</del>
-   <span className='text-highlight'>Remember everything! 🧠</span></p>
+   <span className='text-highlight tagline-highlight'>Remember everything! 🧠</span></p>
 
    <h3 className='text-center'>Why you should use Quick Note?</h3>
 
@@ -45,8 +46,13 @@ function Home() {
 
    </div>
    <div className='buttons-container'>
+    <Link to="/add">
     <button className='btn btn-primary'>✍ Add Note</button>
-    <button className=' btn btn-secondary'>📖 View Note</button>
+    </Link>
+
+    <Link to="/show">
+    <button className=' btn btn-secondary'>📖 Show Note</button>
+    </Link>
    </div>
    
    </>

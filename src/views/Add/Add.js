@@ -1,9 +1,16 @@
 import React from 'react'
 import "./Add.css"
 
+import HomeButton from '../../components/HomeButton/HomeButton'
+ 
+
 function Add() {
   return (
-    <div>Add</div>
+    <div>
+
+      <h1 className='text-center text-primary'>✍ Add Note</h1>
+      <HomeButton/>
+    </div>
   )
 }
 
