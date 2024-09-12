@@ -8,7 +8,7 @@
 
 .feature-card{
     background-color: white;
-    width: 200px;
+    width: 260px;
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 0 10px #BED1CF;
@@ -17,13 +17,13 @@
 }
 
 .feature-img{
-    height: 50px;
+    height: 70px;
     display: block;
     margin: 20px auto;
 }
 
 .feature-text{
-    font-size: 14px;
+    font-size: 16px;
 }
 
 
