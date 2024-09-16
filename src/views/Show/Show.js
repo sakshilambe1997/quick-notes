@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import "./Show.css"
 import NoteCard from '../../components/NoteCard/NoteCard'
+import HomeButton from '../../components/HomeButton/HomeButton'
 
 function Show() {
   const [notes, setNotes]=useState([])
@@ -13,6 +14,7 @@ function Show() {
   return (
     <div>
       <h1 className='text-center text-primary'>📖 Show Note</h1>
+      <HomeButton/>
     <div className='notes-container'>
     {
       notes.map((note,index)=>{
