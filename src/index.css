@@ -1,7 +1,14 @@
 body {
   margin: 0;
-  padding: 20px 50px;
-  background-color: #f5f4f4;
+}
+
+.page-background-img{
+  background-image: url('./assets/back-img.jpg'); 
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat; 
+  min-height: 84vh;
+  padding: 40px;
 }
 
 .text-center{
@@ -9,9 +16,12 @@ body {
 }
 
 .text-primary{
-  color: #e38fa4;
+  color: #ff3385;
 }
 
+.text-white{
+  background-color: white;
+}
 .text-secondary{
   color: #9DBDFF;
 }
@@ -28,7 +38,7 @@ body {
   color: black;
 }
 
-text-white{
+.text-white{
   color: white;
 }
 
@@ -44,7 +54,7 @@ text-white{
 }
 
 .btn-primary{
-  background-color: #e38fa4;;
+  background-color: #ff3385;
 }
 
 .btn-secondary{

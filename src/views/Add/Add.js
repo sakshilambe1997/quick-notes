@@ -35,10 +35,10 @@ function Add() {
 
   }
   
-
-
   return (
-    <div>
+
+    <div className="page-background-img">
+    <div className="note-container">
       <h1 className="text-center text-primary">✍ Add Note</h1>
       <HomeButton/>
 
@@ -102,6 +102,7 @@ function Add() {
           + Add Note
         </button>
       </form>
+    </div>
     </div>
   );
 }

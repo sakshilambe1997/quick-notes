@@ -1,9 +1,18 @@
+.note-container{
+    background-color: white;
+    width: 50%;
+    margin: 60px auto;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
 .user-input{
     width: 400px;
     background-color: white;
     padding: 10px 20px;
     border-radius: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid black;
     display: block;
     margin: 0 auto;
     margin-top: 20px;
@@ -29,6 +38,11 @@
 .add-note-button{
     display: block;
     margin: 30px auto;
+    color: white;
+}
+
+.add-note-button:hover{
+    background-color: #ff66a3;
 }
 
 @media screen and (max-width:500px){
