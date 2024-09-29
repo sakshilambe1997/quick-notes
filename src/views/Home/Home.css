@@ -1,17 +1,16 @@
 .home-head-background-img{
     width: 99vw;
-    height: 400px;
+    height: 350px;
   position: relative;
 }
 
 .app-title{
     font-size: 30px;
     margin-top: 0;
-   
 }
 
 .subheading{
-    font-size: 15px;
+    font-size: 17px;
 }
 
 .buttons-container{
@@ -27,12 +26,16 @@
   margin: 0 auto;
   border-radius: 10px;
   position: absolute;
-  top: 140px;
+  top: 120px;
   right: 260px;
 }
 
 .add-note-butn:hover{
     background-color: #ff99c2;
+}
+
+.why-should-heading{
+    font-size: 30px;
 }
 
 @media screen and (max-width:500px){
@@ -45,9 +48,9 @@
         width: 30%;
         height: 10%;
         padding: 5px;
-        top: 70px;
-        right: 30px;
-        background-color: white;
+        top: 50px;
+        right: 28px;
+       
       }
       
     .app-title{

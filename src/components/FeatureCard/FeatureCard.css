@@ -9,21 +9,30 @@
 .feature-card{
     background-color: white;
     width: 260px;
-    padding: 15px;
+    padding: 10px;
     border-radius: 10px;
-    box-shadow: 0 0 10px #BED1CF;
+    box-shadow: 0 0 10px 5px #c8dbd9;
     cursor: pointer;
-
 }
 
+.feature-card:hover{
+    transform: scalex(1.2);
+    transition: 0.4s;
+}
+
+
 .feature-img{
-    height: 70px;
+    height: 170px;
+    width: 80%;
     display: block;
+    border-radius: 10px;
     margin: 20px auto;
 }
 
 .feature-text{
     font-size: 16px;
+    color: #ff3385;
+    font-weight: bold;
 }
 
 

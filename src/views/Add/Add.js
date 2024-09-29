@@ -2,9 +2,7 @@ import React, { useState } from "react";
 import "./Add.css";
 import EmojiPicker from "emoji-picker-react";
 import HomeButton from "./../../components/HomeButton/HomeButton"
-
-import toast from "react-hot-toast";
-
+import toast,{Toaster} from "react-hot-toast"
 function Add() {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
@@ -23,7 +21,15 @@ function Add() {
     emoji,
   };
 
+  if(!title && !description &&!category &&!emoji){
+     return(
+      toast.error("please fill all feilds")
+     )
+
+  }
+
    notes.push(noteObject)
+
 
    localStorage.setItem("notes", JSON.stringify(notes));
    toast.success("Notes Added Sucessfully!!")
@@ -103,6 +109,7 @@ function Add() {
         </button>
       </form>
     </div>
+    <Toaster/>
     </div>
   );
 }

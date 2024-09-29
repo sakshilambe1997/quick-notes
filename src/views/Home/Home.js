@@ -1,24 +1,21 @@
 import React from 'react'
 import "./Home.css"
-import ImgSecure from "./secure.png"
-import ImgHeart from "./heart.png"
-import ImgBrain from "./human-brain.png"
 import FeatureCard from '../../components/FeatureCard/FeatureCard'
 import { Link } from 'react-router-dom'
-import HeadingImage from "./../../assets/background-heading-img.jpg"
+
 
 const Features=[
   {
-    featureImg:ImgSecure,
+    featureImg:"https://s3.wns.com/S3_5/Images/GenericHeaderBanner/MobileImg/19087/3093/Security-TRAC-Mobile-568x568px.jpg",
     featureText:"Notes will be saved securely in your browsers local storage"
   },
   
   {
-    featureImg:ImgBrain,
+    featureImg:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwLjw8PZ-2qnylEvOrTHkqkBhoSwOds0I3oA&s",
     featureText:"Use your brain for thinking , not for remembering things"
   },
   {
-    featureImg:ImgHeart,
+    featureImg:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiNCkiiQdfEK4shgjZl-Wf_bb-T-zpHadywg&s",
     featureText:"Loved by 100 + users. feedbacks are always welcome!"
   }
 ]
