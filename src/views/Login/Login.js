@@ -1,75 +1,63 @@
-import React, { useState } from 'react'
-import "./Login.css"
-import {Link} from "react-router-dom"
-import axios from "axios"
-import toast,{Toaster} from "react-hot-toast"
-import Footer from '../../components/Footer/Footer'
-import Navbar from '../../components/Navbar/Navbar'
-
-
+import React, { useState } from 'react';
+import './Login.css';
+import toast,{ Toaster } from 'react-hot-toast';
+ 
 function Login() {
-  const [email,setEmail]=useState('');
-  const[password,setPassword]=useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
-  const loginNow = async()=>{
-    
-    
-    if(response.data.success){
-
-      toast.success(response.data.message)
-      localStorage.setItem('currentUser',JSON.stringify(response.data.data))
-
-      toast.loading("Redirecting to dashboard...")
-    
-      setTimeout(()=>{
-        window.location.href='/'
-      },3000)
+  const handleLogin = () => {
+    // Save email and password to local storage
+    if(!email && !password){
+       return(
+        toast.error("Please Enter Email & Password")
+       )
     }
+     localStorage.setItem('email', email);
+    localStorage.setItem('password', password);
 
-    else{
-      toast.error(response.data.message)
-    }
-  }
+    toast.loading("Redirecting to Dashboard..")
+    setTimeout(() => {
+      window.location.href="/"
+    },3000);
+  };
 
   return (
-    <div>
-      <Navbar/>
-     <h1 className='auth-heading'> User Login</h1>
+    <>
+    <div className='page-background-img'>
+    <div className='login-div'>
+    <h2 className='text-center text-primary'>Login Page</h2>
+    
+        <input type='text' 
+        value={email}
+        onChange={(e)=>{
+            setEmail(e.target.value)
+        }}
+        placeholder='Enter Email'
+        required
+        className='input-box'
+        ></input>
+        <br></br>
 
-<form className='auth-form' >
-  <input
-   type='email'
-    placeholder='Email'
-    className='user-input '
-    value={email}
-    onChange={(e)=>{
-      setEmail(e.target.value)
-    }}
-    ></input>
+        
+        <input type='text' value={password}
+        onChange={(e)=>{
+            setPassword(e.target.value)
+        }}
+        required
+        placeholder='Enter Password'
+         className='input-box'
+        ></input>
 
-<input
-   type='password'
-    placeholder='Password'
-    className='user-input '
-    value={password}
-    onChange={(e)=>{
-      setPassword(e.target.value)
-    }}></input>
+        <button className='btn btn-primary btn:hover btn-1' onClick={handleLogin}>Login</button>
 
-    <button
-     type='button' 
-     className='btn-auth' onClick={loginNow}>Login</button>
-</form>
+    </div>
+    </div>
 
-<Link to='/signup' className="auth-link">Don't have an account? <span className='link-text'>Signup</span></Link>
-
-<Toaster/>
-<br/><br/>
-<Footer/>
-      </div>
-
-
-  )
+    <Toaster/>
+    </>
+ 
+  );
 }
 
-export default Login
+export default Login;
