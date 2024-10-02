@@ -2,6 +2,7 @@ import React from 'react'
 import "./Home.css"
 import FeatureCard from '../../components/FeatureCard/FeatureCard'
 import { Link } from 'react-router-dom'
+import Navbar from '../../components/Navbar/Navbar'
 
 
 const Features=[
@@ -23,12 +24,13 @@ const Features=[
 function Home() {
   return (
    <>
+   <Navbar/>
 
     <img src="https://img.freepik.com/free-photo/flay-lay-beautiful-crown-concept_23-2148693214.jpg"className='home-head-background-img'/>
 
    <div className='home-heading-division'>
    <h1 className='text-center text-primary app-title' >📘 Quick Note</h1>
-   <p className='text-center subheading' >Your Pocket friendly app. <del>Never Forget anything again!</del>
+   <p className='text-center subheading' >Your Pocket friendly app. Never Forget anything again! &nbsp;
    <span className='text-highlight tagline-highlight'>Remember everything! 🧠</span></p>
    </div>
   
@@ -51,11 +53,11 @@ function Home() {
    </div>
    <div className='buttons-container'>
     <Link to="/add">
-    <button className='btn text-white btn-primary add-note-butn:hover'>✍ Add Note</button>
+    <button className='btn text-white btn-primary add-note-butn btn1-position'>✍ Add Note</button>
     </Link>
 
     <Link to="/show">
-    <button className=' btn btn-secondary'>📖 Show Note</button>
+    <button className=' btn btn-secondary text-white btn2-position  show-note-btn'>📖 Show Note</button>
     </Link>
    </div>
    

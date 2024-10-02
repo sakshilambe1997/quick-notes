@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import toast from 'react-hot-toast';
+import "./Signup.css"
 
 function Signup() {
     
@@ -33,55 +34,57 @@ const signup =()=>{
         dob: "",
       })
     
-
-
 }
   return (
     <>
-
-<div>
+ <div className='page-background-img'>
+<div className='signup-container'>
    <h1 className='text-center text-primary'>Signup</h1>
    <input type='text'
    value={user.fullName}
    onChange={(e)=>{
-    // setUser(...user,fullName.target.value)
     setUser({ ...user, fullName: e.target.value })}
    }
    placeholder='Fullname'
-   className='input box'
+   className='input-box'
    ></input>
+   <br></br>
 
    <input
    type='text'
    value={user.email}
    onChange={(e)=>{
-    // setUser(...user,email.target.value)
     setUser({ ...user, email: e.target.value })}
    }
    placeholder='Email'
+    className='input-box'
    ></input>
+
+   <br></br>
 
 <input
    type='text'
    value={user.password}
    onChange={(e)=>{
-    // setUser(...user,password.target.value)
     setUser({ ...user, password: e.target.value })}
    }
    placeholder='Password'
+    className='input-box'
    ></input>
+   <br></br>
 
 <input
    type='date'
    value={user.dob}
    onChange={(e)=>{
-    // setUser(...user,dob.target.value)
     setUser({ ...user, dob: e.target.value })}
    }
    placeholder='Password'
+    className='input-box'
    ></input>
 
-   <button type='button' className='btn ' onClick={signup}></button>
+   <button type='button' className='btn btn-primary btn-1 signup-btn' onClick={signup}>Signup</button>
+    </div>
     </div>
     
     </>

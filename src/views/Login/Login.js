@@ -1,20 +1,23 @@
 import React, { useState } from 'react';
 import './Login.css';
 import toast,{ Toaster } from 'react-hot-toast';
+import Navbar from "./../../components/Navbar/Navbar.js"
+
  
 function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
   const handleLogin = () => {
-    // Save email and password to local storage
+
     if(!email && !password){
        return(
         toast.error("Please Enter Email & Password")
        )
     }
-     localStorage.setItem('email', email);
-    localStorage.setItem('password', password);
+
+    //  const currentUser=localStorage.getItem(JSON.parse(user))
+    //  console.log(currentUser)
 
     toast.loading("Redirecting to Dashboard..")
     setTimeout(() => {
@@ -24,6 +27,7 @@ function Login() {
 
   return (
     <>
+    <Navbar/>
     <div className='page-background-img'>
     <div className='login-div'>
     <h2 className='text-center text-primary'>Login Page</h2>
@@ -49,7 +53,7 @@ function Login() {
          className='input-box'
         ></input>
 
-        <button className='btn btn-primary btn:hover btn-1' onClick={handleLogin}>Login</button>
+        <button className='btn btn-primary login-btn btn-1' onClick={handleLogin}>Login</button>
 
     </div>
     </div>

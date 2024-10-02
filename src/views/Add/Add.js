@@ -3,6 +3,7 @@ import "./Add.css";
 import EmojiPicker from "emoji-picker-react";
 import HomeButton from "./../../components/HomeButton/HomeButton"
 import toast,{Toaster} from "react-hot-toast"
+import Navbar from "../../components/Navbar/Navbar";
 function Add() {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
@@ -42,11 +43,12 @@ function Add() {
   }
   
   return (
+  <>
 
+  <Navbar/>
     <div className="page-background-img">
     <div className="note-container">
       <h1 className="text-center text-primary">✍ Add Note</h1>
-      <HomeButton/>
 
       <form>
         <input
@@ -111,6 +113,7 @@ function Add() {
     </div>
     <Toaster/>
     </div>
+    </>
   );
 }
 

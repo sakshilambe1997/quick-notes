@@ -26,14 +26,31 @@
   margin: 0 auto;
   border-radius: 10px;
   position: absolute;
-  top: 120px;
+  top: 180px;
   right: 260px;
+}
+
+.btn1-position{
+    position:absolute;
+    top:340px;
+    right: 400px;
+}
+
+.btn2-position{
+    position:absolute;
+    top:340px;
+    right: 240px;
 }
 
 .add-note-butn:hover{
     background-color: #ff99c2;
+    color: black;
 }
 
+.show-note-btn:hover{
+    background-color: #8eadec;
+    color: black;
+}
 .why-should-heading{
     font-size: 30px;
 }
