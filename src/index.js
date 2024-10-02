@@ -9,6 +9,7 @@ import toast,{Toaster} from "react-hot-toast"
 import Login from './views/Login/Login';
 import Signup from './views/Signup/Signup';
 import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
  
@@ -39,6 +40,12 @@ const router =createBrowserRouter([
     path:"/signup",
     element:<Signup/>
   },
+
+  {
+    path:"/footer",
+    element:<Footer/>
+  },
+
 
   {
     path:"*",

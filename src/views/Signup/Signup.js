@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import toast from 'react-hot-toast';
 import "./Signup.css"
+import Navbar from "./../../components/Navbar/Navbar.js"
 
 function Signup() {
     
@@ -24,8 +25,9 @@ const signup =()=>{
 
     setTimeout(() => {
         toast.success("Signup Succesfully!!")
-        window.location.href="/"
-    },3000);
+        toast.success("Signup Successfully!!")
+          window.location.href="/login"
+    },2000);
 
     setUser({
         fullName: "",
@@ -37,7 +39,9 @@ const signup =()=>{
 }
   return (
     <>
+    <Navbar/>
  <div className='page-background-img'>
+  
 <div className='signup-container'>
    <h1 className='text-center text-primary'>Signup</h1>
    <input type='text'

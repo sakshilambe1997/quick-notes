@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Login.css';
 import toast,{ Toaster } from 'react-hot-toast';
 import Navbar from "./../../components/Navbar/Navbar.js"
+import Footer from '../../components/Footer/Footer.js';
 
  
 function Login() {
@@ -19,8 +20,10 @@ function Login() {
     //  const currentUser=localStorage.getItem(JSON.parse(user))
     //  console.log(currentUser)
 
-    toast.loading("Redirecting to Dashboard..")
+    
     setTimeout(() => {
+      toast.success("Login Successfully!!")
+      toast.loading("Redirecting to Dashboard..")
       window.location.href="/"
     },3000);
   };
@@ -57,6 +60,7 @@ function Login() {
 
     </div>
     </div>
+    <Footer/>
 
     <Toaster/>
     </>

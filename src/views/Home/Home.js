@@ -3,6 +3,7 @@ import "./Home.css"
 import FeatureCard from '../../components/FeatureCard/FeatureCard'
 import { Link } from 'react-router-dom'
 import Navbar from '../../components/Navbar/Navbar'
+import Footer from '../../components/Footer/Footer'
 
 
 const Features=[
@@ -60,6 +61,8 @@ function Home() {
     <button className=' btn btn-secondary text-white btn2-position  show-note-btn'>📖 Show Note</button>
     </Link>
    </div>
+
+  <Footer/>
    
    </>
   )
