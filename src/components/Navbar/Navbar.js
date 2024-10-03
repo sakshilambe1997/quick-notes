@@ -13,8 +13,10 @@ function Navbar() {
           <div className='menu-item-container'>
          
             <Link to="/" className="menu-img-item">Home</Link>
-            <Link to="/about" className="menu-img-item">About</Link>
+            <Link to="/add" className="menu-img-item">Add</Link>
+            <Link to="/show" className="menu-img-item">Show</Link>
             <Link to="/login" className="menu-img-item">Login</Link>
+            
             <Link to="/signup" className="menu-img-item">Signup</Link>
             </div>
             <div>

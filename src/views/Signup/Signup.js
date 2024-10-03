@@ -14,9 +14,10 @@ function Signup() {
 })
 
 const signup =()=>{
+
     const { fullName, email, password, dob } = user;
 
-    if(!fullName && !email && !password && !dob){
+    if(!fullName || !email || !password || !dob){
         return(
             toast.error("Please Enter All Feilds")
         )

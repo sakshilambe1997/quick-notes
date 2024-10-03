@@ -2,9 +2,10 @@ import React from "react";
 import Facebook from "./facebook.png";
 import Instagram from "./instagram.png";
 import Twitter from "./twitter.png";
-import Youtube from "./linkedin.png";
+import Linkdin from "./linkedin.png";
 import LogoImg from "./../Navbar/logo.png"
 import "./Footer.css"
+import { Link } from "react-router-dom";
 
 function Footer() {
     
@@ -30,10 +31,18 @@ function Footer() {
 
         <div className="footer-menu-container">
           <h3 className="footer-main-heading">Contact Us</h3>
-          <img src={Facebook}  className="footer-contact-logo"/>
-          <img src={Instagram} className="footer-contact-logo"/>
+         <Link to="https://www.facebook.com/" target="_blank"><img src={Facebook}  className="footer-contact-logo"/></Link>
+
+          <Link to="https://www.instagram.com/"><img src={Instagram} className="footer-contact-logo"/>
+          </Link>
+
+          <Link to="https://www.instagram.com/" target="_blank" >
           <img src={Twitter} className="footer-contact-logo"/>
-          <img src={Youtube} className="footer-contact-logo"/>
+          </Link>
+
+          <Link to="" target="_blank">
+          <img src={Linkdin} className="footer-contact-logo"/>
+          </Link>
         </div>
 
         <div className="footer-menu-container">

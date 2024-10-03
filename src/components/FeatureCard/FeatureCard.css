@@ -15,10 +15,10 @@
     cursor: pointer;
 }
 
-.feature-card:hover{
+/* .feature-card:hover{
     transform: scalex(1.2);
     transition: 0.4s;
-}
+} */
 
 
 .feature-img{

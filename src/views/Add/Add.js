@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Add.css";
 import EmojiPicker from "emoji-picker-react";
-import toast,{Toaster} from "react-hot-toast"
+import toast from "react-hot-toast"
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "./../../components/Footer/Footer.js"
 
@@ -112,7 +112,7 @@ function Add() {
         </button>
       </form>
     </div>
-    <Toaster/>
+   
     </div>
     <Footer/>
     </>
