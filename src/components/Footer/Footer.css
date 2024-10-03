@@ -1,12 +1,29 @@
 .footer-container{
-    background-color: #fa7caf;
+    background-color: #fa91bb;
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    
+ 
+}
+
+.footer-img-container{
+    width: 200px;
+}
+
+.footer-logo-img{
+    display: block;
+    margin: 20px auto;
+    height: 100px;
     padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 3px white;
+    
 }
 
 .footer-menu-container{
     width: 220px;
+    height: 150px;
     text-align: center;
     margin: 10px;
     font-weight: bold;
@@ -21,6 +38,11 @@
 .footer-text{
     font-weight: bold;
     cursor: pointer;
+    margin-bottom: 9px;
+}
+
+.footer-text:hover{
+    color:white;
 }
 
 .footer-contact-logo:hover{

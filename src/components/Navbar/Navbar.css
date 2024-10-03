@@ -1,8 +1,6 @@
 .menu-container{
     display: flex;
-   background-color: #fa7caf;
-     
-
+   background-color: #fa91bb;
     justify-content: space-around;
     align-items: center;
     height: 60px;
@@ -31,4 +29,5 @@
 .logo-img{
     height: 50px;
     border-radius: 50%;
+    box-shadow: 0 0 10px 3px white;
 }

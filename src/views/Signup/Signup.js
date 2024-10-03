@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import toast from 'react-hot-toast';
 import "./Signup.css"
 import Navbar from "./../../components/Navbar/Navbar.js"
+import Footer from '../../components/Footer/Footer.js';
 
 function Signup() {
     
@@ -90,6 +91,7 @@ const signup =()=>{
    <button type='button' className='btn btn-primary btn-1 signup-btn' onClick={signup}>Signup</button>
     </div>
     </div>
+    <Footer/>
     
     </>
    
