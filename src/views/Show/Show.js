@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./Show.css";
 import NoteCard from "../../components/NoteCard/NoteCard";
-import HomeButton from "../../components/HomeButton/HomeButton";
+import Navbar from "./../../components/Navbar/Navbar.js"
+import Footer from "./../../components/Footer/Footer.js"
 
 function Show() {
   const [notes, setNotes] = useState([]);
@@ -12,10 +13,11 @@ function Show() {
   }, []);
 
   return (
+    <>
+    <Navbar/>
     <div className="page-background-img">
       <div className="show-notes-main-container">
         <h1 className="text-center text-primary">📖 Show Note</h1>
-        <HomeButton />
         <div className="notes-container">
           {notes.map((note, index) => {
             const { title, description, category, emoji } = note;
@@ -34,6 +36,8 @@ function Show() {
         </div>
       </div>
     </div>
+    <Footer/>
+    </>
   );
 }
 
