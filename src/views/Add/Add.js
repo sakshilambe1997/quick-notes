@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import "./Add.css";
 import EmojiPicker from "emoji-picker-react";
-import HomeButton from "./../../components/HomeButton/HomeButton"
 import toast,{Toaster} from "react-hot-toast"
 import Navbar from "../../components/Navbar/Navbar";
+import Footer from "./../../components/Footer/Footer.js"
+
 function Add() {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
@@ -113,6 +114,7 @@ function Add() {
     </div>
     <Toaster/>
     </div>
+    <Footer/>
     </>
   );
 }
